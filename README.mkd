@@ -4,6 +4,11 @@
 
 This is a module for autotest that will provide notification for the results of your Cucumber features.
 
+## Requirements
+
+1. Autotest (ZenTest) configured to run your Cucumber features
+2. libnotify -- This module only works on linux with the libnotify package right now. I'll work on adding support for other notification frameowrks in the future 
+
 ## Using the module
 
 1. Clone the repositry to some location on your computer, e.g. your home folder.
@@ -19,6 +24,8 @@ This is a module for autotest that will provide notification for the results of 
 ## Thanks To
 
 This is largely based on the work done by [carlosbrando](http://github.com/carlosbrando "carlosbrando") and his work on the [autotest-notification gem](http://github.com/carlosbrando/autotest-notification/tree/master "autotest-notification"). Many thanks to him. Hopefully I'll be able to make this a gem someday.
+
+The cool icons came from the [Buuf](http://mattahan.deviantart.com/art/Buuf-37966044) icon set by [Paul Davey](http://mattahan.deviantart.com/).
 
 ## LICENSE:
 
