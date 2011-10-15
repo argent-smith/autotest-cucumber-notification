@@ -1,11 +1,11 @@
 module CucumberNotify
   class Config
- 
+
     class << self
       attr_reader :images_directory
       attr_accessor :success_image, :fail_image, :pending_image, :undefined_image, :expiration_in_seconds,
-                    :failure, :success, :pending, :undefined
- 
+        :failure, :success, :pending, :undefined
+
       def images_directory=(path)
         @images_directory = File.expand_path(path)
         @success_image = "#{@images_directory}/pass.png"
@@ -14,16 +14,16 @@ module CucumberNotify
         @undefined_image = "#{@images_directory}/undefined.png"
       end
     end
- 
+
     self.images_directory = "#{File.dirname(__FILE__)}/images/"
     self.expiration_in_seconds = 5
     self.failure = "Features Failure"
     self.success = "Features Success"
     self.pending = "Features Pending"
     self.undefined = "Features Undefined"
- 
+
   end
-  
+
   Autotest.add_hook :ran_features do |at|
     result = at.results.is_a?(String) ? at.results : at.results.to_s
 
@@ -32,12 +32,12 @@ module CucumberNotify
       @steps = result[/(\d+) steps?/,1].to_i
       @scenario_stats = Hash.new
       @step_stats = Hash.new
-      
+
       %w{ failed skipped passed pending undefined }.each do |x|
         @scenario_stats.merge!({ "#{x}" => result[/^\d+ scenarios?.*?(\d+) #{x}.*\)$/,1].to_i })
         @step_stats.merge!({ "#{x}" => result[/^\d+ steps?.*?(\d+) #{x}.*\)$/,1].to_i })
       end
-            
+
       if @scenario_stats["failed"] > 0 || @step_stats["failed"] > 0
         notify Config.failure, assemble_msg(@scenarios,@steps,@scenario_stats,@step_stats), Config.fail_image
       elsif @scenario_stats["pending"] > 0 || @step_stats["pending"] > 0
@@ -51,16 +51,16 @@ module CucumberNotify
       end
     end
   end
-  
+
   class << self
     def notify(title, msg, img = Config.success_image)
-      system "notify-send -t #{Config.expiration_in_seconds} -i #{img} '#{title}' '#{msg}'"
+      system "notify-send -t #{Config.expiration_in_seconds} -i #{img} '#{title}' '#{msg}' -t 5000"
     end
- 
+
     def pluralize(text, number)
       "#{number} #{text}#{'s' if number != 1}"
     end
- 
+
     def assemble_msg(scenarios, steps, scenario_stats = {}, step_stats = {})
       msg = ""
       if scenarios > 0
@@ -74,7 +74,7 @@ module CucumberNotify
       end
       return msg
     end
-    
+
     def stat_string(hash)
       stat_str = "("
       hash.each do |key,value|
@@ -86,5 +86,5 @@ module CucumberNotify
       stat_str.gsub!(",\)",")")
     end
   end
-  
+
 end
