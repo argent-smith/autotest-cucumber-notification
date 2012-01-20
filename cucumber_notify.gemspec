@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{Gem port of Matt Buck's autotest-cucumber-notification module.}
   s.description = %q{This is a module for autotest that will provide notification for the results of your Cucumber features.}
 
-  s.extra_doc_files = [
+  s.extra_rdoc_files = [
     "LICENSE.rdoc",
     "README.rdoc"
   ]

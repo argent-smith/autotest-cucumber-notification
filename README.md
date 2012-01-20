@@ -31,7 +31,8 @@ The cool icons came from the [Buuf](http://mattahan.deviantart.com/art/Buuf-3796
 
 (The MIT License)
 
-Copyright (c) 2008
+Code: Copyright (c) Matt Buck, 2008 - 2012
+Gem:  Copyright (c) Pavel Argentov, 2012
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
