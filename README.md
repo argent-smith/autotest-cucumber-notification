@@ -10,7 +10,7 @@ This is a module for autotest that will provide notification for the results of 
 ## Requirements
 
 1. Autotest (ZenTest) configured to run your Cucumber features
-2. libnotify -- This module only works on linux with the libnotify package right now. I'll work on adding support for other notification frameowrks in the future 
+2. libnotify -- This module only works on linux with the libnotify package right now. I'll work on adding support for other notification frameworks in the future 
 
 ## Using the gem
 
@@ -19,7 +19,7 @@ This is a module for autotest that will provide notification for the results of 
 ```shell
 $ gem install cucumber-notify
 ```
-2. Edit your .autotest to include the module. If you downloaded it to your home folder, do something like this:
+2. Edit your `.autotest` to include the module. If you downloaded it to your home folder, do something like this:
 
 ```ruby
 require 'rubygems'
