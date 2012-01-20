@@ -4,7 +4,7 @@ module CucumberNotify
     class << self
       attr_reader :images_directory
       attr_accessor :success_image, :fail_image, :pending_image, :undefined_image, :expiration_in_seconds,
-        :failure, :success, :pending, :undefined
+        :failure, :success, :pending, :undefined, :fade_timeout
 
       def images_directory=(path)
         @images_directory = File.expand_path(path)
@@ -15,8 +15,8 @@ module CucumberNotify
       end
     end
 
-    self.images_directory = "#{File.dirname(__FILE__)}/images/"
-    self.expiration_in_seconds = 5
+    self.images_directory = File.expand_path('../../images', File.dirname(__FILE__))
+    self.fade_timeout = 5000
     self.failure = "Features Failure"
     self.success = "Features Success"
     self.pending = "Features Pending"
@@ -54,7 +54,7 @@ module CucumberNotify
 
   class << self
     def notify(title, msg, img = Config.success_image)
-      system "notify-send -t #{Config.expiration_in_seconds} -i #{img} '#{title}' '#{msg}' -t 5000"
+      system "notify-send -i #{img} '#{title}' '#{msg}' -t #{Config.fade_timeout}"
     end
 
     def pluralize(text, number)
