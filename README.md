@@ -15,13 +15,15 @@ This is a module for autotest that will provide notification for the results of 
 ## Using the gem
 
 1. Install the gem:
+
 ```shell
-    $ gem install cucumber-notify
+$ gem install cucumber-notify
 ```
 2. Edit your .autotest to include the module. If you downloaded it to your home folder, do something like this:
+
 ```ruby
-    require 'rubygems'
-    require 'cucumber-notify'
+require 'rubygems'
+require 'cucumber-notify'
 ```
 
 3. That's it. Just run Autotest with your Cucumber features like normal.
@@ -46,6 +48,7 @@ by Paul Davey <http://mattahan.deviantart.com/>.
 
 * Code: Copyright (c) Matt Buck, 2008 - 2012
 * Gem:  Copyright (c) Pavel Argentov, 2012
+
 ```
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
