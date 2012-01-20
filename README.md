@@ -30,26 +30,23 @@ require 'cucumber-notify'
 
 ## Credits
 
-The original code this gem is based upon is compiled by Matt Buck,
-<https://github.com/techpeace>
+The original code this gem is based upon is compiled by [Matt Buck](https://github.com/techpeace).
 
-This is largely based on the work done by
-carlosbrando, <https://github.com/carlosbrando>, and his work on
-the autotest-notification gem,
-<https://github.com/carlosbrando/autotest-notification/tree/master>,
+This is largely based on the work done by [carlosbrando](https://github.com/carlosbrando), and his work on
+[the autotest-notification gem](https://github.com/carlosbrando/autotest-notification/tree/master),
 many thanks to him.
 
-The cool icons came from the Buuf icon set, <http://mattahan.deviantart.com/art/Buuf-37966044>
-by Paul Davey <http://mattahan.deviantart.com/>.
+The cool icons came from the [Buuf icon set](http://mattahan.deviantart.com/art/Buuf-37966044)
+by [Paul Davey](http://mattahan.deviantart.com/).
 
 ## License
 
-### The MIT License
+```
+The MIT License
 
 * Code: Copyright (c) Matt Buck, 2008 - 2012
 * Gem:  Copyright (c) Pavel Argentov, 2012
 
-```
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
 'Software'), to deal in the Software without restriction, including
