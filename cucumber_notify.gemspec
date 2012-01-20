@@ -1,17 +1,20 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "autotest-cucumber-notification/version"
+require "cucumber_notify/version"
 
 Gem::Specification.new do |s|
-  s.name        = "autotest-cucumber-notification"
+  s.name        = "cucumber_notify"
   s.version     = CucumberNotify::VERSION
   s.authors     = ["Pavel Argentov", "Matt Buck"]
   s.email       = ["argentoff@gmail.com", "github@matthewbuck.com"]
   s.homepage    = ""
-  s.summary     = %q{Cucumber -> autotest -> libnotify}
+  s.summary     = %q{Gem port of Matt Buck's autotest-cucumber-notification module.}
   s.description = %q{This is a module for autotest that will provide notification for the results of your Cucumber features.}
 
-  s.rubyforge_project = "autotest-cucumber-notification"
+  s.extra_doc_files = [
+    "LICENSE.rdoc",
+    "README.rdoc"
+  ]
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
