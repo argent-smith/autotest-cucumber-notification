@@ -34,8 +34,8 @@ module CucumberNotify
       @step_stats = Hash.new
 
       %w{ failed skipped passed pending undefined }.each do |x|
-        @scenario_stats.merge!({ "#{x}" => result[/^\d+ scenarios?.*?(\d+) #{x}.*\)$/,1].to_i })
-        @step_stats.merge!({ "#{x}" => result[/^\d+ steps?.*?(\d+) #{x}.*\)$/,1].to_i })
+        @scenario_stats.merge!({ "#{x}" => result[/\d+ scenarios?.*?(\d+) #{x}.*\)/,1].to_i })
+        @step_stats.merge!({ "#{x}" => result[/\d+ steps?.*?(\d+) #{x}.*\)/,1].to_i })
       end
 
       if @scenario_stats["failed"] > 0 || @step_stats["failed"] > 0
