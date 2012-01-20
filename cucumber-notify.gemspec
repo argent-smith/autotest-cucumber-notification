@@ -7,13 +7,18 @@ Gem::Specification.new do |s|
   s.version     = CucumberNotify::VERSION
   s.authors     = ["Pavel Argentov", "Matt Buck"]
   s.email       = ["argentoff@gmail.com", "github@matthewbuck.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/argent-smith/autotest-cucumber-notification/tree/gem"
   s.summary     = %q{Gem port of Matt Buck's autotest-cucumber-notification module.}
   s.description = %q{This is a module for autotest that will provide notification for the results of your Cucumber features.}
 
   s.extra_rdoc_files = [
     "LICENSE.rdoc",
     "README.rdoc"
+  ]
+
+  s.rdoc_options = [
+    '--title', 'Cucumber notifier for autotest',
+    '--main',  'README.rdoc'
   ]
 
   s.files         = `git ls-files`.split("\n")

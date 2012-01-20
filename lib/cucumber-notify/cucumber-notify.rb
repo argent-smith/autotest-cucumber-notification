@@ -1,4 +1,7 @@
+# Usage:: see README
 module CucumberNotify
+
+  # Notifier configuration helpers and defaults.
   class Config
 
     class << self
@@ -53,6 +56,7 @@ module CucumberNotify
   end
 
   class << self
+
     def notify(title, msg, img = Config.success_image)
       system "notify-send -i #{img} '#{title}' '#{msg}' -t #{Config.fade_timeout}"
     end

@@ -1,4 +1,4 @@
-= Autotest Cucumber Notify
+= Cucumber notifier for autotest
 
 This gem's homepage is currently at
 https://github.com/argent-smith/autotest-cucumber-notification/tree/gem
