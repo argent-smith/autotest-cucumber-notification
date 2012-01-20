@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "cucumber_notify/version"
+require "cucumber-notify/version"
 
 Gem::Specification.new do |s|
-  s.name        = "cucumber_notify"
+  s.name        = "cucumber-notify"
   s.version     = CucumberNotify::VERSION
   s.authors     = ["Pavel Argentov", "Matt Buck"]
   s.email       = ["argentoff@gmail.com", "github@matthewbuck.com"]
