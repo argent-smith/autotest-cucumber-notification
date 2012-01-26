@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "cucumber-notify/version"
+$:.push File.expand_path("../lib", File.dirname(__FILE__))
+require "autotest-cucumber-notification/version"
 
 Gem::Specification.new do |s|
-  s.name        = "cucumber-notify"
-  s.version     = CucumberNotify::VERSION
-  s.authors     = ["Pavel Argentov", "Matt Buck"]
-  s.email       = ["argentoff@gmail.com", "github@matthewbuck.com"]
-  s.homepage    = "https://github.com/argent-smith/autotest-cucumber-notification/tree/gem"
-  s.summary     = %q{Gem port of Matt Buck's autotest-cucumber-notification module.}
-  s.description = %q{This is a module for autotest that will provide notification for the results of your Cucumber features.}
+  s.name        = "autotest-cucumber-notification"
+  s.version     = AutotestCucumberNotification::VERSION
+  s.authors     = ["Pavel Argentov"]
+  s.email       = ["argentoff@gmail.com"]
+  s.homepage    = "https://github.com/argent-smith/autotest-cucumber-notification"
+  s.summary     = %q{Libnotify notification poster for cucumber run under autotest.}
+  s.description = %q{This is an autotest plugin that will notify you about the results of your Cucumber features run.}
 
   s.extra_rdoc_files = [
     "LICENSE.rdoc",
