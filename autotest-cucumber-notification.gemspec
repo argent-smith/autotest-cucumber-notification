@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", File.dirname(__FILE__))
+$:.unshift File.expand_path("lib", File.dirname(__FILE__))
 require "autotest-cucumber-notification/version"
 
 Gem::Specification.new do |s|

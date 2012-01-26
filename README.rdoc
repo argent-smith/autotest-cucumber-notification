@@ -27,9 +27,10 @@ This is a module for autotest that will provide notification for the results of 
 
 The original code was written by Curt Hasselschwert and re-combined later by Matt Buck.
 The code is largely based on the work done by carlosbrando[https://github.com/carlosbrando],
-and his work on the "autotest-notification gem"[https://github.com/carlosbrando/autotest-notification],
+and his work on the (autotest-notification gem
+(https://github.com/carlosbrando/autotest-notification),
 many thanks to him.
 
-The cool icons came from the Buuf icon set(http://mattahan.deviantart.com/art/Buuf-37966044)
-by Paul Davey[http://mattahan.deviantart.com/].
+The cool icons came from the Buuf icon set (http://mattahan.deviantart.com/art/Buuf-37966044)
+by Paul Davey (http://mattahan.deviantart.com/).
 

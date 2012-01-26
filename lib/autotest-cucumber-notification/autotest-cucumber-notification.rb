@@ -1,5 +1,5 @@
 # Usage:: see README
-module CucumberNotify
+module AutotestCucumberNotification
 
   # Notifier configuration helpers and defaults.
   class Config
