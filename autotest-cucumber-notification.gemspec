@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  s.add_runtime_dependency "cucumber"
-  s.add_runtime_dependency "ZenTest"
+  s.add_development_dependency "gemcutter"
+  s.add_runtime_dependency     "cucumber"
+  s.add_runtime_dependency     "ZenTest"
 end
