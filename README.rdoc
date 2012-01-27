@@ -18,7 +18,7 @@ This is a module for autotest that will provide notification for the results of 
 2. Edit your .autotest to include the module. If you downloaded it to your
    home folder, do something like this:
 
-    require 'rubygems'
+    require 'rubygems'                       # for rubies prior to 1.9
     require 'autotest-cucumber-notification'
 
 3. That's it. Just run Autotest with your Cucumber features like normal.

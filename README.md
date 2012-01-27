@@ -19,8 +19,8 @@ of your Cucumber features.
 2. Edit your `.autotest` to include the module. If you downloaded it to your
    home folder, do something like this:
 
-        require 'rubygems'        # for ruby versions prior to 1.9
-        require 'cucumber-notify'
+        require 'rubygems'                       # for ruby versions prior to 1.9
+        require 'autotest-cucumber-notification'
 
 3. That's it. Just run Autotest with your Cucumber features like normal.
 
