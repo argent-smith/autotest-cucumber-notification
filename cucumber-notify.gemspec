@@ -5,11 +5,11 @@ require "cucumber-notify/version"
 Gem::Specification.new do |s|
   s.name        = "cucumber-notify"
   s.version     = CucumberNotify::VERSION
-  s.authors     = ["Pavel Argentov", "Matt Buck"]
-  s.email       = ["argentoff@gmail.com", "github@matthewbuck.com"]
+  s.authors     = ["Pavel Argentov"]
+  s.email       = ["argentoff@gmail.com"]
   s.homepage    = "https://github.com/argent-smith/autotest-cucumber-notification/tree/gem"
-  s.summary     = %q{Gem port of Matt Buck's autotest-cucumber-notification module.}
-  s.description = %q{This is a module for autotest that will provide notification for the results of your Cucumber features.}
+  s.summary     = %q{DEPRECATED: use 'autotest-cucumber-notification' gem instead.}
+  s.description = %q{This is now a meta-gem which is only delegating all functionality to 'autotest-cucumber-notification' gem/module.}
 
   s.extra_rdoc_files = [
     "LICENSE.rdoc",
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   ]
 
   s.rdoc_options = [
-    '--title', 'Cucumber notifier for autotest',
+    '--title', 'DEPRECATED',
     '--main',  'README.rdoc'
   ]
 
@@ -27,7 +27,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  s.add_runtime_dependency "cucumber"
-  s.add_runtime_dependency "ZenTest"
+  s.add_development_dependency "gemcutter"
+  s.add_runtime_dependency "autotest-cucumber-notification"
 end
