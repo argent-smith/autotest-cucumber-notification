@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = CucumberNotify::VERSION
   s.authors     = ["Pavel Argentov"]
   s.email       = ["argentoff@gmail.com"]
-  s.homepage    = "https://github.com/argent-smith/autotest-cucumber-notification/tree/gem"
+  s.homepage    = "https://github.com/argent-smith/autotest-cucumber-notification/tree/deprecated"
   s.summary     = %q{DEPRECATED: use 'autotest-cucumber-notification' gem instead.}
   s.description = %q{This is now a meta-gem which is only delegating all functionality to 'autotest-cucumber-notification' gem/module.}
 
