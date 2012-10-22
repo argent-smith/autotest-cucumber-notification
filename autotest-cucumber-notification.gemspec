@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = AutotestCucumberNotification::VERSION
   s.authors     = ["Pavel Argentov"]
   s.email       = ["argentoff@gmail.com"]
-  s.homepage    = "https://github.com/argent-smith/autotest-cucumber-notification"
+  s.homepage    = "https://github.com/evrone/autotest-cucumber-notification"
   s.summary     = %q{Libnotify notification poster for cucumber run under autotest.}
   s.description = %q{This is an autotest plugin that will notify you about the results of your Cucumber features run.}
 
